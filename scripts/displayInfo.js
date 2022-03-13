@@ -12,38 +12,30 @@ const petSalon={
         open:"9:00am",
         close:"5:00pm"
     },//Create pets array 
-    pets:[
-        { // first pet
-            name:"Scooby",
-            age:50,
-            gender:"Male",
-            breed:"Dane",
-            service:"Grooming",
-            ownerName:"Shaggy",
-            contactPhone:"888-888-888"
-        },
-        { 
-            name:"Appa",
-            age:4,
-            gender:"Male",
-            breed:"Bulldog",
-            service:"Grooming",
-            ownerName:"Jon",
-            contactPhone:"123-456-789"
-         }
-    ]
-}
-console.log(petSalon.address.zip);
-console.log(petSalon.pets.length);
-//display the service in the console.
-console.log(petSalon.pets[0].service);
+    pets:[]
+    }
+// console.log(petSalon.address.zip);
+// console.log(petSalon.pets.length);
+// //display the service in the console.
+// console.log(petSalon.pets[0].service);
 
-function displaySalonInfo(){
+function displayPetSalonInfo(){
     document.getElementById("footer-info").innerHTML=`Welcome to ${petSalon.name} ${petSalon.address.city}`;
 }
-displaySalonInfo();
-function displayPetName(){
+// displayPetSalonInfo();
 
-}
+if (petSalon.pets.length >=0){
+    alert("You have "+ petSalon.pets.length +" animals registered")
+};
+
+function displayPetNames(){
+    document.getElementById("petnames").innerHTML+=`
+    <p> We have ${petSalon.pets[0].name} in the first appointment slot <p>
+    <p> We have ${petSalon.pets[1].name} in the second appointment slot <p>
+    <p> We have ${petSalon.pets[3].name} in the third appointment slot <p>
+    `;
+};
+// displayPetNames();
+// }
 
 //display the pet salon info in  the footer section of the html
