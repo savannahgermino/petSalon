@@ -72,10 +72,10 @@ function displayPets(){
 }
 
 function init(){
-    let scooby = new Pet("Scooby", 50, "Male", "Mixed Breed", "Nail Trim", "Jon", 5621234567);
-    let appa = new Pet("Appa", 3, "Male", "English Bulldog","Bath", "Savannah", 8051234567);
-    petSalon.pets.push(scooby, appa);
+    let appa = new Pet("Appa", 3, "Male", "English Bulldog", "Nail Trim", "Jonathan", 8051234567);
+    let goose = new Pet("Goose", 5, "Female", "Basset Hound","Bath", "Sierrah", 8057654321);
+    let mamba = new Pet("Mamba", 8, "Male", "Chow Chow","Bath & Trim", "Alex", 8059876543);
+    petSalon.pets.push(appa, goose, mamba);
     displayPets();
 }
-
 window.onload=init;

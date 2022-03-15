@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="styles/mystyle.css">
     <title>City Dog</title>
 </head>
+<nav>
+    <ul><a href="index.html">Home</a></ul>
+    <ul><a href="aboutus.html">About Us</a></ul>
+    <ul><a href="services.html">Services</a></ul>
+    <ul><a href="register.html">Schedule an Appointment</a></ul>
+</nav>
 <body>
     <header>
-        <h1>City Dog</h1>
+        <h1>Schedule an Appointment</h1>
     </header>
     <main class="container">
-        <h2>Register a new Pet</h2>
+        <h3>Register a new Pet</h3>
         <div>
             <div class="mb-3">
             <input class="form-control" type="text" id="txtPetName" placeholder="Enter your pet's name">
@@ -32,9 +38,9 @@
         </div>
         <button class="btn btn-primary" onclick="register();">Add</button>
     </main>
-    <div>
+    <div class="total">
         <div id="total">
-            Total= 2
+            Total= 4
         </div>
         <div id="Dogs">
             🐶= 2
@@ -49,7 +55,7 @@
     <div class= "pets" id="pets">
         <!--pets will be displayed here-->
     </div>
-    <footer>
+    <footer id="footer-info">
 
     </footer>
     <script src="scripts/displayInfo.js"></script>
