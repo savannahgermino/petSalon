@@ -13,33 +13,33 @@ const petSalon={
         close:"5:00pm"
     },//Create pets array 
     pets:[
-            {
-                name:"Appa",
-                age:3,
-                gender:"Male",
-                breed:"English Bulldog",
-                service:"Nail trim",
-                ownerName:"Jonathan",
-                ownerNumber:8051234567
-            },
-            {
-                name:"Goose",
-                age:5,
-                gender:"Female",
-                breed:"Basset Hound",
-                service:"Bath",
-                ownerName:"Sierrah",
-                ownerNumber:8057654321
-            },
-            {
-                name:"Mamba",
-                age:8,
-                gender:"Male",
-                breed:"Chow Chow",
-                service:"Bath & Trim",
-                ownerName:"Alex",
-                ownerNumber:8059876543
-            }
+            // {
+            //     name:"Appa",
+            //     age:3,
+            //     gender:"Male",
+            //     breed:"English Bulldog",
+            //     service:"Nail trim",
+            //     ownerName:"Jonathan",
+            //     ownerNumber:8051234567
+            // },
+            // {
+            //     name:"Goose",
+            //     age:5,
+            //     gender:"Female",
+            //     breed:"Basset Hound",
+            //     service:"Bath",
+            //     ownerName:"Sierrah",
+            //     ownerNumber:8057654321
+            // },
+            // {
+            //     name:"Mamba",
+            //     age:8,
+            //     gender:"Male",
+            //     breed:"Chow Chow",
+            //     service:"Bath & Trim",
+            //     ownerName:"Alex",
+            //     ownerNumber:8059876543
+            // }
         ]
     }
 // console.log(petSalon.address.zip);
@@ -64,7 +64,7 @@ function displayPetNames(){
     <p> We have ${petSalon.pets[2].name} in the third appointment slot <p>
     `;
 };
-displayPetNames();
+// displayPetNames();
 
 
 //display the pet salon info in  the footer section of the html

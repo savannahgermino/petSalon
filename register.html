@@ -18,8 +18,7 @@
     <header>
         <h1>Schedule an Appointment</h1>
     </header>
-    <main class="container">
-        <h3>Register a new Pet</h3>
+    <main class="appointment">
         <div>
             <div class="mb-3">
             <input class="form-control" type="text" id="txtPetName" placeholder="Enter your pet's name">
@@ -38,23 +37,44 @@
         </div>
         <button class="btn btn-primary" onclick="register();">Add</button>
     </main>
-    <div class="total">
-        <div id="total">
-            Total= 4
-        </div>
-        <div id="Dogs">
-            🐶= 2
-        </div>
-        <div id="Cats">
-            🐱= 2
-        </div>
-        <div id="Others">
-            🐹= 0
+        <div class="total">
+            <div id="total">
+                Total= 4
+            </div>
+            <div id="Dogs">
+                🐶= 2
+            </div>
+            <div id="Cats">
+                🐱= 2
+            </div>
+            <div id="Others">
+                🐹= 0
+            </div>
         </div>
     </div>
-    <div class= "pets" id="pets">
-        <!--pets will be displayed here-->
+    <div class= "pet container" id="pets">
+
     </div>
+
+    <div class="container">
+        <input class="form-control" id="txtSearch" type="search">
+        <button onclick="searchPet();" class="btn btn-primary">Search</button>
+    </div>
+    <table class="table container">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Breed</th>
+            <th>Service</th>
+            <th>Owner Name</th>
+            <th>Owner Number</th>
+        </tr>
+        <tbody id="petsTable">
+            <!--insert the pets here-->
+        </tbody>
+    </table>
+
     <footer id="footer-info">
 
     </footer>

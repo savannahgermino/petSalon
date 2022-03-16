@@ -1,10 +1,10 @@
 nav{
     background-color: rgb(255, 255, 255);
-    height: 15vh;
+    height: 12vh;
     text-align: center;
     color: white;
     letter-spacing: 4px;
-    padding-top: 45px;
+    padding-top: 40px;
 }
 nav a:link{
     text-decoration: none;
@@ -27,9 +27,14 @@ h1{
 body{
     background-color: #c0ced4;
 }
+.home{
+    margin-top: 30rem;
+    text-align: center;
+}
+.home h4{
+    padding-bottom: 1rem;
+}
 .services{
-    display: grid;
-    grid-template-columns: repeat(1,4fr);
     row-gap: 10px;
     border: 3px solid white;
     border-radius: 80px;
@@ -48,6 +53,7 @@ body{
     margin-top: 1rem;
     margin-left: 15rem;
     margin-right: 15rem;
+    margin-bottom: 15rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 5rem;
@@ -55,33 +61,37 @@ body{
 
 }
 .total{
-    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
     margin-bottom: 1rem;
 }
-.container-pets{
+.appointment{
+    margin-left: 34rem;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    column-gap: 1rem;
     row-gap: 1rem;
 }
-.pet{
+.pets{
+    display: grid;
+    grid-template-columns: repeat(4,3fr);
     border: 3px solid white;
     border-radius: 80px;
     border-width: 5px 15px;
-    background-color: rgb(81, 146, 158);
-    color: white;
-    margin-left: 5rem;
-    margin-right: 7rem;
-    margin-bottom: 5rem;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+.bg-color{
+    background-color: yellowgreen;
 }
 footer{
     background-color: rgb(255, 255, 255);
-    height: 15vh;
     text-align: center;
     color: rgb(15, 10, 10);
     letter-spacing: 4px;
     padding-top: 45px;
+    position:bottom;
+    bottom:0;
+    width:100%;
+    height: 150px;
+    margin-top: 30px;
 }
