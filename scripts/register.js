@@ -1,9 +1,10 @@
 //create the constructor 
 let x=0;
-function Pet(name,age,gender,breed,service,ownerName,ownerNumber){
+function Pet(name,age,gender,species,breed,service,ownerName,ownerNumber){
     this.petName=name;
     this.petAge=age;
     this.petGender=gender;
+    this.petSpecies=species;
     this.petBreed=breed;
     this.petService=service;
     this.petOwnerName=ownerName;
@@ -14,6 +15,7 @@ function Pet(name,age,gender,breed,service,ownerName,ownerNumber){
 let inputPetName=document.getElementById("txtPetName");
 let inputPetAge=document.getElementById("txtPetAge");
 let inputPetGender=document.getElementById("txtPetGender");
+let inputPetSpecies=document.getElementById("txtPetSpecies");
 let inputPetBreed=document.getElementById("txtPetBreed");
 let inputPetService=document.getElementById("txtPetService");
 let inputPetOwnerName=document.getElementById("txtPetOwnerName");
@@ -41,9 +43,9 @@ function isValid(aPet){
 }
 
 function register(){
-    console.log(inputPetName.value,inputPetAge.value,inputPetGender.value,inputPetBreed.value,inputPetService.value,inputPetOwnerName.value,inputPetOwnerNumber.value);
+    console.log(inputPetName.value,inputPetAge.value,inputPetGender.value,inputPetSpecies.value,inputPetBreed.value,inputPetService.value,inputPetOwnerName.value,inputPetOwnerNumber.value);
     //create the obj
-    let thePet = new Pet(inputPetName.value,inputPetAge.value,inputPetGender.value,inputPetBreed.value,inputPetService.value,inputPetOwnerName.value,inputPetOwnerNumber.value);
+    let thePet = new Pet(inputPetName.value,inputPetAge.value,inputPetGender.value,inputPetSpecies.value,inputPetBreed.value,inputPetService.value,inputPetOwnerName.value,inputPetOwnerNumber.value);
     console.log(thePet);
 
     if(isValid){
@@ -62,6 +64,7 @@ function displayPets(){
             <p> Name: ${petSalon.pets[i].petName}</p>
             <p> Age: ${petSalon.pets[i].petAge}</p>
             <p> Gender: ${petSalon.pets[i].petGender}</p>
+            <p> Species: ${petSalon.pets[i].petSpecies}</p>
             <p> Breed: ${petSalon.pets[i].petBreed}</p>
             <p> Service: ${petSalon.pets[i].petService}</p>
             <p> Owner Name: ${petSalon.pets[i].petOwnerName}</p>
@@ -79,6 +82,7 @@ function displayPetsTable(){
                 <td> ${petSalon.pets[i].petName}</td>
                 <td> ${petSalon.pets[i].petAge}</td>
                 <td> ${petSalon.pets[i].petGender}</td>
+                <td> ${petSalon.pets[i].petSpecies}</td>
                 <td> ${petSalon.pets[i].petBreed}</td>
                 <td> ${petSalon.pets[i].petService}</td>
                 <td> ${petSalon.pets[i].petOwnerName}</td>
@@ -121,9 +125,9 @@ function searchPet(){
 }
 
 function init(){
-    let appa = new Pet("Appa", 3, "Male", "English Bulldog", "Nail Trim", "Jonathan", 8051234567);
-    let goose = new Pet("Goose", 5, "Female", "Basset Hound","Bath", "Sierrah", 8057654321);
-    let mamba = new Pet("Mamba", 8, "Male", "Chow Chow","Bath & Trim", "Alex", 8059876543);
+    let appa = new Pet("Appa", 3, "Male", "Dog", "English Bulldog", "Nail Trim", "Jonathan", 8051234567);
+    let goose = new Pet("Goose", 5, "Female", "Dog","Basset Hound","Bath", "Sierrah", 8057654321);
+    let mamba = new Pet("Mamba", 8, "Male", "Dog","Chow Chow","Bath & Trim", "Alex", 8059876543);
     petSalon.pets.push(appa, goose, mamba);
     displayPets();
     displayPetsTable();

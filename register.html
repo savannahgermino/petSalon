@@ -9,10 +9,13 @@
     <title>City Dog</title>
 </head>
 <nav>
-    <ul><a href="index.html">Home</a></ul>
-    <ul><a href="aboutus.html">About Us</a></ul>
-    <ul><a href="services.html">Services</a></ul>
-    <ul><a href="register.html">Schedule an Appointment</a></ul>
+    <div class="logo">
+        <img src="sd-logo.PNG" alt="logo"></img>
+        <ul><a href="index.html">Home</a></ul>
+        <ul><a href="aboutus.html">About Us</a></ul>
+        <ul><a href="services.html">Services</a></ul>
+        <ul><a href="register.html">Schedule an Appointment</a></ul>
+    </div>
 </nav>
 <body>
     <header>
@@ -27,9 +30,11 @@
             <div class="mb-3">
             <input class="form-control" type="text" id="txtPetGender" placeholder="Enter your pet's gender">
             <div class="mb-3">
+            <input class="form-control"  type="text" id="txtPetSpecies" placeholder="Enter your pet's species">
+            <div class="mb-3">
             <input class="form-control"  type="text" id="txtPetBreed" placeholder="Enter your pet's breed">
             <div class="mb-3">
-            <input class="form-control"  type="text" id="txtPetService" placeholder="Enter the requested grooming service">
+            <input class="form-control"  type="text" id="txtPetService" placeholder="Enter the grooming service">
             <div class="mb-3">
             <input class="form-control"  type="text" id="txtPetOwnerName" placeholder="Enter your name">
             <div class="mb-3">
@@ -65,6 +70,7 @@
             <th>Name</th>
             <th>Age</th>
             <th>Gender</th>
+            <th>Species</th>
             <th>Breed</th>
             <th>Service</th>
             <th>Owner Name</th>
